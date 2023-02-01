@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(127, 253, 169);
+    font-family: 'Aboreto', cursive;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+#game-board {
+    background-color: bisque;
+    width: 90vmin;
+    height: 90vmin;
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+    border-radius: .3rem;
+    display: grid;
+    grid-template-columns: repeat(35, 1fr);
+    grid-template-rows: repeat(35, 1fr);
+    position: relative;
+}
+
+.snake {
+    background-color: rgb(11, 191, 86);
+    border: .25vmin solid black;
+    border-radius: .75vmin;
+}
+
+.food {
+    background-color: rgb(226, 146, 17);
+    border: .25vmin solid black;
+    border-radius: .75vmin;
+}
+
+.creds {
+    display: flex;
+    font-size: 3vw;
+    padding: 0 1rem;
+}
+
+.game-over {
+    width: 22.5rem;
+    height: 30rem;
+    border-radius: 1rem;
+    background: url("./assets/snake.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.game-over h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 1.75rem;
+    color: rgb(0, 100, 62);
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: .5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+    width: 80%;
+}
+
+.bottom h2 {
+    color: rgb(78, 119, 31);
+}
+
+.bottom button {
+    border-radius: .25rem;
+    border: none;
+    background: rgba(98, 235, 24, .5);
+    padding: .5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.bottom button:active {
+    scale: .98;
+}
+
+.bottom button:hover {
+    box-shadow: .1rem .1rem 0 inset darkolivegreen, -.1rem -.1rem 0 inset darkolivegreen;
+    background-color: rgba(98, 235, 24, .8);
+}
