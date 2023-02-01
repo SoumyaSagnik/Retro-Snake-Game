@@ -2,4 +2,4 @@
 
 ## Live Score Update
 
-## Increse in Difficulty over time
+## Increse in difficulty over time
