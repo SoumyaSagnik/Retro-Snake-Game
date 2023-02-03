@@ -61,6 +61,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     position: relative;
+    transform: translateY(-5rem);
 }
 
 .game-over h1 {
@@ -104,4 +105,37 @@ body {
 .bottom button:hover {
     box-shadow: .1rem .1rem 0 inset darkolivegreen, -.1rem -.1rem 0 inset darkolivegreen;
     background-color: rgba(98, 235, 24, .8);
+}
+
+.mobile-controls {
+    display: none;
+    position: absolute;
+    bottom: 5vh;
+    gap: .25rem;
+}
+
+.mobile-controls .top-controls {
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-controls button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-controls button:active {
+    scale: .98;
+}
+
+.mobile-controls img {
+    width: 3rem;
+}
+
+@media screen and (max-width: 700px) {
+    .mobile-controls {
+        display: flex;
+        flex-direction: column;
+    }
 }
