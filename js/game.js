@@ -58,10 +58,10 @@ function updateScore() {
 
 function updateDifficulty(score) {
   if (score > 59) snakeSpeed = 30;
-  else if (score > 39) snakeSpeed = 25;
-  else if (score > 24) snakeSpeed = 20;
-  else if (score > 14) snakeSpeed = 15;
-  else if (score > 4) snakeSpeed = 10;
+  else if (score > 39) snakeSpeed = 20;
+  else if (score > 24) snakeSpeed = 15;
+  else if (score > 14) snakeSpeed = 10;
+  else if (score > 4) snakeSpeed = 7;
 }
 
 function gameResult(score) {
