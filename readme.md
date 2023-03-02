@@ -1,7 +1,21 @@
 # Retro Snake Game
 
-## Live Score Update
+<a href="https://snake-game-ssk.netlify.app/">Play</a>
 
-## Increse in difficulty over time
+### Live Score Update
 
-## Mobile Friendly
+<p align="center">
+    <img src="./assets/ss1.png" />
+</p>
+
+### Increse in difficulty over time
+
+<p align="center">
+    <img src="./assets/ss2.png" />
+</p>
+
+### Mobile Friendly
+
+<p align="center">
+    <img src="./assets/ss3.png" />
+</p>
