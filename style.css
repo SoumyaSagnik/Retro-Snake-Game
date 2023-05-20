@@ -61,7 +61,6 @@ body {
     background-attachment: fixed;
     background-position: center;
     position: relative;
-    transform: translateY(-5rem);
 }
 
 .game-over h1 {
@@ -137,5 +136,10 @@ body {
     .mobile-controls {
         display: flex;
         flex-direction: column;
+    }
+
+    .game-over {
+        transform: translateY(-5rem);
+        scale: .7;
     }
 }
